@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5.9</title>
+    <script>
+      var str = "Can you can a can as a Canner can can a can";
+      var str1 = str.toLowerCase();
+      var n = 0;
+      for(var i = 0; i < str1.length; i++){
+        if(str1.charAt(i) == "c"){
+          n++;
+        }
+      }
+      document.write(n + "<br/>");
+      // 5.11
+      var a = "Rome was not built in a day";
+      var arr1 = a.split(" ");
+      document.write(arr1.length + "<br/>");
+
+      var b = "Hello Lvye";
+      var c = "";
+      for(var i = 0; i < b.length; i++){
+        if(b.charAt(i)!="e"){
+          c += b.charAt(i);
+        }
+      }
+      document.write(c + "<br/>");
+    </script>
+  </head>
+</html>

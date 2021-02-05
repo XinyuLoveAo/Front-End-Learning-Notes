@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>3.8</title>
+    <script>
+      var str = "";
+      for(var n=100;n<1000;n++){
+        var a = n%10;
+        var b = (n/10)%10;
+        b = parseInt(b);
+        // 没有这句话会导致无法显示结果，因为 JavaScript 中没有定义类型，所以得到的结果是包含小数的，平时在Java里面定义 int a ，所以不需要舍弃小数。 
+        var c = n/100;
+        c = parseInt(c);
+        if(n == (a*a*a + b*b*b + c*c*c)){
+          str = str + n + "，";
+        }
+      }
+      document.write(str);
+    </script>
+  </head>
+</html>

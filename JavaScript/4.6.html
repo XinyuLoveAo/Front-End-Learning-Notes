@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>4.6</title>
+    <script>
+      function isLeapyear(year){
+        if(year%400==0 || (year%4==0&&year%100!=0)){
+          return true;
+        }
+        else{
+          return false;
+        }
+      }
+      document.write(isLeapyear(2017));
+      document.write(isLeapyear(2000));
+    </script>
+  </head>
+</html>
